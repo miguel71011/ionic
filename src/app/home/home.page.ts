@@ -6,41 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  Nombre=null;
+  Apellido=null;
+  Celular=null;
+  Email=null;
+  Usuarios = [];
 
-  nombre = null;
-  apellido = null;
-  celular = null;
-  email = null;
-
-  usuarios = [];
-
-  constructor() { }
+  constructor() {}
 
   guardarDatos() {
-    // Agregando datos a la base de datos en memoria
-    this.usuarios.push({
-      nombre: this.nombre
+    
+    this.Usuarios.push({
+    Nombre: this.Nombre
     })
-    // Limpiando datos
-    this.nombre = "";
+    this.Nombre= " "; 
 
-    this. usuarios.push({
-      Apellido: this.apellido
-
-    })
-    this.apellido= "";
-
-    this.usuarios.push({
-      Celular: this.celular
+    this. Usuarios.push({
+      Apellido: this.Apellido
 
     })
-    this.celular= " ";
+    this.Apellido= "";
 
-    this.usuarios.push({
-      Email: this.email
+    this. Usuarios.push({
+      Celular: this.Celular
 
     })
-    this.email= " ";
+    this.Celular= " ";
+
+    this. Usuarios.push({
+      Email: this.Email
+
+    })
+    this.Email= " ";
 
     
   }
@@ -48,14 +45,14 @@ export class HomePage {
  
   
   eliminar(Usuarios){
-    var valor = this.usuarios.indexOf(Usuarios)
+    var valor = this.Usuarios.indexOf(Usuarios)
 
-    this.usuarios.splice(valor,4);
+    this.Usuarios.splice(valor,4);
   }
 
   Editar(Usuarios)
   {
-    this.usuarios 
+    this.Usuarios 
     {
       Nombre:Usuarios.Nombre;
       Apellido:Usuarios.Apellido;
@@ -65,6 +62,8 @@ export class HomePage {
     }
    
   }
-  
-  
+
+
+
+
 }
