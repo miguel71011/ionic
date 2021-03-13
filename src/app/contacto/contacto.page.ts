@@ -14,15 +14,18 @@ export class ContactoPage implements OnInit {
   constructor() { }
 
   operacion(){
-    if(this.operador =='+')
+    if(this.operador =='+'){
       this.respuesta=this.valor1 + this.valor2;
-    else if(this.operador=='-')
-    this.respuesta=this.valor1 - this.valor2;
-    else if(this.operador=='*')
-    this.respuesta=this.valor1 * this.valor2; 
-    else if(this.operador=='/')
-    this.respuesta=this.valor1 / this.valor2;
+        }else if(this.operador=='-') {
+          this.respuesta=this.valor1 - this.valor2;
+          }else if(this.operador=='*'){
+            this.respuesta=this.valor1 * this.valor2;
+           }else if(this.operador=='/'){
+            this.respuesta=this.valor1 / this.valor2;
+            }           
+    
   }
+
 
   ngOnInit() {
   }
