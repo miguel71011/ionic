@@ -1,9 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>nosotros</ion-title>
+    <ion-title>saludo</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-button routerLink ="/home">Ir a home</ion-button>
+  <ion-button routerLink="/inicio">inicio</ion-button>
+  <ion-item>
+    <ion-label position="floating">Ingresa tu Nombre:</ion-label>
+    <ion-input [(ngModel)]="nombre" ></ion-input>
+  </ion-item>
+
+  <ion-button color="secondary">saludar<ion-icon name="hand-right-outline"></ion-icon></ion-button>
 </ion-content>

@@ -1,12 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      contacto
+      operaciones 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   
-  <ion-button href="/home">Ir a home</ion-button>
+  <ion-button routerLink="/inicio">inicio</ion-button>
+  <ion-item>
+    <ion-label position="floating">numero 1:</ion-label>
+    <ion-input type="number" [(ngModel)]="valor1" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">operador:</ion-label>
+    <ion-input [(ngModel)]="operador" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">numero 2:</ion-label>
+    <ion-input type="number" [(ngModel)]="valor2" ></ion-input>
+  </ion-item>
+  
+  <ion-button  color="warning" (clik)="operacion(respuesta)">calcular<ion-icon name="calculator-outline"></ion-icon></ion-button >
+  <br>
+  <ion-lebel>
+    la respuesta de la es:{{respuesta}}
+  </ion-lebel>
 </ion-content>
