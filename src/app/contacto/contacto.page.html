@@ -16,7 +16,7 @@
 
   <ion-item>
     <ion-label position="floating">operador:</ion-label>
-    <ion-input [(ngModel)]="operador" ></ion-input>
+    <ion-input type="text" [(ngModel)]="valor1" ></ion-input>
   </ion-item>
 
   <ion-item>
@@ -26,7 +26,9 @@
   
   <ion-button  color="warning" (clik)="operacion(respuesta)">calcular<ion-icon name="calculator-outline"></ion-icon></ion-button >
   <br>
-  <ion-lebel>
-    la respuesta de la es:{{respuesta}}
-  </ion-lebel>
+  
+    <ion-lebel>
+      la respuesta de la es:{{respuesta}}
+    </ion-lebel>
+  
 </ion-content>

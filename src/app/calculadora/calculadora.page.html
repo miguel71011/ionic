@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid id="grid">
+    <ion-row>
+      <ion-col>
+        <span id="resultado">0</span>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col><ion-button onclick="add ('1')">1</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('2')">2</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('3')">3</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('+')">+</ion-button></ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col><ion-button onclick="add ('4')">4</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('5')">5</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('6')">6</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('-')">-</ion-button></ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col><ion-button onclick="add ('7')">7</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('8')">8</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('9')">9</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('')"></ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button onclick="dell()">AC</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('0')">0</ion-button></ion-col>
+      <ion-col><ion-button onclick="calc()">=</ion-button></ion-col>
+      <ion-col><ion-button onclick="add ('/')">/</ion-button></ion-col>
+    </ion-row>
+   </ion-grid>
+</ion-content>
